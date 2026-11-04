@@ -1,0 +1,22 @@
+import 'package:clima_app/screen/home_screen.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const ClimaApp());
+}
+
+class ClimaApp extends StatelessWidget {
+  const ClimaApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: .fromSeed(seedColor: Colors.lightBlue),
+        useMaterial3: true,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
